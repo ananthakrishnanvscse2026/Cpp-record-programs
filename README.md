@@ -108,3 +108,39 @@ The program displays the original matrices, their sum, difference, product, and 
 
 ## Conclusion
 Successfully implemented matrix operations in C++ using operator overloading, member functions, and unit testing.
+
+# 4.Stack and Queue Performance Comparison in C++
+
+### Aim
+To compare the execution time of custom Stack and Queue implementations with the Standard Template Library (STL) Stack and Queue in C++.
+
+### Concepts Used
+- Templates
+- Stack and Queue data structures
+- STL (`stack` and `queue`)
+- Execution time measurement using `chrono`
+- Operation counting
+
+### Program Description
+This program implements custom Stack and Queue classes using arrays and compares their performance with the built-in STL Stack and Queue. It measures the execution time required to perform 10,000 insertion and removal operations for each data structure.
+
+The program also counts the total operations performed across all four benchmarks.
+
+### Operations Performed
+- Push and pop using a custom Stack
+- Push and pop using an STL Stack
+- Enqueue and dequeue using a custom Queue
+- Push and pop using an STL Queue
+- Measure execution time in microseconds
+- Display the total number of operations
+
+### Expected Output
+The program displays the execution time for each implementation and the total operation count. Timing values vary depending on the system and compiler.
+
+### Technologies Used
+- Language: C++
+- Compiler: OnlineGDB
+- Repository: GitHub
+
+### Conclusion
+This program demonstrates how to implement Stack and Queue data structures using templates and compare their execution times with STL implementations. It also introduces basic performance measurement and operation counting.
