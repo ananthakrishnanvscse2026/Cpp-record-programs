@@ -179,3 +179,25 @@ The program stores student names and marks in a vector, sorts them in descending
 
 ### Conclusion
 This program demonstrates how C++ STL algorithms simplify student data processing, sorting, searching, grading, and statistical analysis.
+
+# 6.Smart Pointers and RAII in C++
+
+### Aim
+To demonstrate Resource Acquisition Is Initialization (RAII) and compare manual resource management with C++ smart pointers.
+
+### Concepts Used
+- Classes and objects
+- Constructors and destructors
+- RAII (Resource Acquisition Is Initialization)
+- Custom smart pointer using `operator->()`
+- `unique_ptr` for exclusive ownership
+- `shared_ptr` for shared ownership
+- `weak_ptr` for non-owning resource observation
+- `get()` to access the raw pointer
+- `reset()` to release a resource
+- `use_count()` to check shared ownership count
+- `expired()` to check resource availability
+- Deleted copy constructor and assignment operator
+
+### Program Description
+The program demonstrates how resources are acquired and released using a custom RAII smart pointer and standard C++ smart pointers. It shows exclusive ownership with `unique_ptr`, shared ownership with `shared_ptr`, and non
