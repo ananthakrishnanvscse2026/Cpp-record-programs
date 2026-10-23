@@ -1,4 +1,4 @@
-# University-Management-System-Using-Encapsulation-and-Constructors-Destructors-in-C-
+# 1.University-Management-System-Using-Encapsulation-and-Constructors-Destructors-in-C-
 # C++ Student Constructor Demo
 
 ## About the Project
@@ -39,7 +39,7 @@ The program demonstrates how different constructors initialize objects and how t
 
 The program was run using the OnlineGDB C++ compiler. The source code is included in this repository for reference and learning.
 
-# Shape Area Calculator Using Pointers and References
+# 2.Shape Area Calculator Using Pointers and References
 
 ## Aim
 To write a C++ program to calculate the areas of a circle, rectangle, and triangle using pointers, references, and runtime polymorphism.
