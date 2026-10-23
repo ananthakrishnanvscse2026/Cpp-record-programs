@@ -277,3 +277,35 @@ Withdrew Rs. 1500.000000
 
 ### Commit Message
 `Add transaction history and minimum balance validation`
+
+# 8.String Copy and Move Semantics Benchmark
+
+### Description
+A C++ program demonstrating copy and move semantics using a custom `String` class. It compares copy and move operation performance and demonstrates perfect forwarding.
+
+### Concepts Used
+- **Constructor and Destructor:** Manage dynamic memory.
+- **Copy Constructor:** Creates an independent copy of a string.
+- **Move Constructor:** Transfers ownership of allocated memory.
+- **Copy and Move Assignment Operators:** Handle copying and transferring resources during assignment.
+- **Perfect Forwarding:** Uses `std::forward()` to preserve argument value categories.
+- **String Length:** Uses `getLength()` to return the number of characters.
+- **Empty String Check:** Uses `isEmpty()` to check whether the string is empty.
+- **Performance Benchmarking:** Uses `chrono` to measure copy and move operation times.
+
+### Sample Output
+```text
+String Length: 86 characters
+Is String Empty: No
+
+Perfect Forwarding Result: Perfect Forwarding Example
+
+Copy Operation Time: [varies] milliseconds
+Move Operation Time: [varies] milliseconds
+```
+
+*Note: Execution times vary depending on the computer, compiler, and optimization settings.*
+
+
+### Commit Message
+`Add string length and empty checks to move semantics benchmark`
