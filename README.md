@@ -309,3 +309,40 @@ Move Operation Time: [varies] milliseconds
 
 ### Commit Message
 `Add string length and empty checks to move semantics benchmark`
+
+# 9.Notification System Using Design Patterns
+
+### Description
+A C++ notification system that uses the **Observer, Factory, and Singleton design patterns** to send notifications through email and SMS. It also tracks event numbers and displays notification priorities.
+
+### Concepts Used
+- **Observer Pattern:** Notifies subscribed users when an event occurs.
+- **Factory Pattern:** Creates email or SMS notification objects based on the requested type.
+- **Singleton Pattern:** Ensures only one `EventManager` instance exists.
+- **Smart Pointers:** Uses `shared_ptr` for automatic memory management.
+- **Default Arguments:** Assigns `"NORMAL"` priority when no priority is specified.
+- **Event Counter:** Tracks the total number of events triggered.
+- **Virtual Functions:** Enables runtime polymorphism through the `Observer` interface.
+
+### Sample Output
+```text
+Event Number: 1
+Priority: HIGH
+Event Triggered: Hackathon registration is open!
+Sending Notifications...
+Email sent to arjun@college.edu: Hackathon registration is open!
+SMS sent to 9988776655: Hackathon registration is open!
+
+Event Number: 2
+Priority: NORMAL
+Event Triggered: Lab record submission is on Monday!
+Sending Notifications...
+Email sent to arjun@college.edu: Lab record submission is on Monday!
+SMS sent to 9988776655: Lab record submission is on Monday!
+
+Total Events Triggered: 2
+```
+
+
+### Learning Outcome
+This program demonstrates how C++ design patterns can be combined to create a modular notification system with reusable components, automatic memory management, notification priorities, and event tracking.
