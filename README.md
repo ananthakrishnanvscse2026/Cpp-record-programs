@@ -39,3 +39,27 @@ The program demonstrates how different constructors initialize objects and how t
 
 The program was run using the OnlineGDB C++ compiler. The source code is included in this repository for reference and learning.
 
+# Shape Area Calculator Using Pointers and References
+
+## Aim
+To write a C++ program to calculate the areas of a circle, rectangle, and triangle using pointers, references, and runtime polymorphism.
+
+## Concepts Used
+- Abstract class and pure virtual function
+- Inheritance
+- Pointers and references
+- Virtual functions
+- Runtime polymorphism
+- Const member functions
+- Virtual destructor
+
+## Tools Used
+- Programming Language: C++
+- Compiler: OnlineGDB
+- Repository: GitHub
+
+## Program Description
+The program defines an abstract `Shape` class and derives `Circle`, `Rectangle`, and `Triangle` classes from it. A base-class pointer is used to calculate the area of each shape, while a reference-based function displays the results.
+
+## Result
+Successfully implemented a C++ program demonstrating pointers, references, and runtime polymorphism to calculate the areas of different shapes.
