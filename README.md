@@ -230,3 +230,56 @@ valgrind --leak-check=full ./smart_pointer
 ```
 
 A clean Valgrind report should show no memory leaks and zero errors.
+
+# 7.Bank Exception Handling
+
+### Description
+A C++ program demonstrating custom exception handling in a banking system. It validates deposits and withdrawals, protects the account's minimum balance, and records successful transactions.
+
+### Concepts Used
+- **Custom Exceptions:** `BankException`, `InsufficientFundsException`, `InvalidAmountException`, and `MinimumBalanceException`.
+- **Exception Handling:** Uses `try`, `throw`, and `catch` to handle banking errors.
+- **Inheritance:** Specialized exception classes inherit from `BankException`.
+- **Encapsulation:** Account details and transaction data are stored as private members.
+- **Vector:** Stores transaction history dynamically using `vector<string>`.
+- **Minimum Balance Validation:** Ensures the account balance does not fall below Rs. 1000.
+- **Transaction Tracking:** Maintains total deposits, total withdrawals, and successful transaction count.
+- **Strong Exception Guarantee:** Failed transactions leave the account balance unchanged.
+
+### Sample Output
+```text
+Initial Account Details:
+Account Holder: Priya
+Balance: Rs. 6000
+Deposit successful: Rs. 2000
+Withdrawal successful: Rs. 1500
+
+Trying to withdraw Rs. 7000...
+Error: Insufficient balance for withdrawal.
+
+Trying to withdraw Rs. 6000...
+Error: Minimum balance of Rs. 1000 must be maintained.
+
+--- Account Summary ---
+Account Holder: Priya
+Current Balance: Rs. 6500
+Total Deposited: Rs. 2000
+Total Withdrawn: Rs. 1500
+Successful Transactions: 2
+
+--- Transaction History ---
+Deposited Rs. 2000.000000
+Withdrew Rs. 1500.000000
+```
+
+### File
+`bank_exception.cpp`
+
+### How to Compile and Run
+```bash
+g++ bank_exception.cpp -o bank_exception
+./bank_exception
+```
+
+### Commit Message
+`Add transaction history and minimum balance validation`
