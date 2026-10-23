@@ -180,77 +180,53 @@ The program stores student names and marks in a vector, sorts them in descending
 ### Conclusion
 This program demonstrates how C++ STL algorithms simplify student data processing, sorting, searching, grading, and statistical analysis.
 
-6.Smart Pointers and RAII in C++
+# 6.Smart Pointers and RAII in C++
 
-Aim
-
+### Aim
 To demonstrate Resource Acquisition Is Initialization (RAII) and compare manual resource management with C++ smart pointers.
 
-Concepts Used
+### Concepts Used
+- Classes and objects
+- Constructors and destructors
+- RAII (Resource Acquisition Is Initialization)
+- Custom smart pointer using `operator->()`
+- `unique_ptr` for exclusive ownership
+- `shared_ptr` for shared ownership
+- `weak_ptr` for non-owning resource observation
+- `get()` to access the raw pointer
+- `reset()` to release a resource
+- `use_count()` to check shared ownership count
+- `expired()` to check resource availability
+- Deleted copy constructor and assignment operator
 
-Classes and objects
-
-Constructors and destructors
-
-RAII (Resource Acquisition Is Initialization)
-
-Custom smart pointer using operator->()
-
-unique_ptr for exclusive ownership
-
-shared_ptr for shared ownership
-
-weak_ptr for non-owning resource observation
-
-get() to access the raw pointer
-
-reset() to release a resource
-
-use_count() to check shared ownership count
-
-expired() to check resource availability
-
-Deleted copy constructor and assignment operator
-
-Program Description
-
-The program demonstrates how resources are acquired and released using a custom RAII smart pointer and standard C++ smart pointers. It shows exclusive ownership with unique_ptr, shared ownership with shared_ptr, and non-owning observation with weak_ptr.
+### Program Description
+The program demonstrates how resources are acquired and released using a custom RAII smart pointer and standard C++ smart pointers. It shows exclusive ownership with `unique_ptr`, shared ownership with `shared_ptr`, and non-owning observation with `weak_ptr`.
 
 The program also demonstrates raw pointer access, resource reset, reference counting, and automatic resource cleanup.
 
-Sample Output
+### Sample Output
+- Resource acquired and released automatically
+- Raw pointer available: 1
+- After reset: 1
+- Shared Pointer Count: 2
+- Weak Pointer Expired: 0
+- Program completed successfully.
 
-Resource acquired and released automatically
+### Technologies Used
+- Language: C++
+- Standard: C++11
+- Compiler: OnlineGDB or a compatible C++ compiler
+- Repository: GitHub
 
-Raw pointer available: 1
+### Conclusion
+This program demonstrates RAII and smart pointer techniques for safer resource management in C++. It explains how `unique_ptr`, `shared_ptr`, and `weak_ptr` manage ownership and resource lifetime.
 
-After reset: 1
-
-Shared Pointer Count: 2
-
-Weak Pointer Expired: 0
-
-Program completed successfully.
-
-Technologies Used
-
-Language: C++
-
-Standard: C++11
-
-Compiler: OnlineGDB or a compatible C++ compiler
-
-Repository: GitHub
-
-Conclusion
-
-This program demonstrates RAII and smart pointer techniques for safer resource management in C++. It explains how unique_ptr, shared_ptr, and weak_ptr manage ownership and resource lifetime.
-
-Memory Leak Testing
-
+### Memory Leak Testing
 The program can also be tested with Valgrind in a compatible Linux environment:
 
+```bash
 g++ -g smart_pointer.cpp -o smart_pointer
 valgrind --leak-check=full ./smart_pointer
+```
 
 A clean Valgrind report should show no memory leaks and zero errors.
