@@ -144,3 +144,38 @@ The program displays the execution time for each implementation and the total op
 
 ### Conclusion
 This program demonstrates how to implement Stack and Queue data structures using templates and compare their execution times with STL implementations. It also introduces basic performance measurement and operation counting.
+
+# 5.Student Grade Analyzer Using STL Algorithms in C++
+
+### Aim
+To analyze student marks, assign grades, and identify student performance using C++ STL algorithms.
+
+### Concepts Used
+- Classes and objects
+- Vector container
+- Lambda expressions
+- `sort()` – sorts students by marks
+- `transform()` – assigns grades
+- `find_if()` – finds the first student scoring above 80
+- `accumulate()` – calculates total marks
+- `max_element()` and `min_element()` – find the highest and lowest scorers
+- `count_if()` – counts students scoring 80 or above
+- `reverse()` – reverses the student list
+
+### Program Description
+The program stores student names and marks in a vector, sorts them in descending order, and assigns grades based on their marks. It calculates the total and average marks, identifies the highest and lowest scorers, and counts students scoring 80 or above.
+
+### Sample Output
+- Highest Scorer: Rahul (94)
+- Lowest Scorer: Vikram (68)
+- Total Marks: 321
+- Average Mark: 80.25
+- Students scoring 80 or above: 2
+
+### Technologies Used
+- Language: C++
+- Compiler: OnlineGDB
+- Repository: GitHub
+
+### Conclusion
+This program demonstrates how C++ STL algorithms simplify student data processing, sorting, searching, grading, and statistical analysis.
