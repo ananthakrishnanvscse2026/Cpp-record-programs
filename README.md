@@ -63,3 +63,48 @@ The program defines an abstract `Shape` class and derives `Circle`, `Rectangle`,
 
 ## Result
 Successfully implemented a C++ program demonstrating pointers, references, and runtime polymorphism to calculate the areas of different shapes.
+
+# 3.Matrix Operations Using Operator Overloading in C++
+
+## Aim
+To develop a C++ program to perform matrix addition, subtraction, multiplication, and transpose using operator overloading and member functions.
+
+## Concepts Used
+- Classes and Objects
+- Parameterized Constructor
+- Operator Overloading (`+`, `-`, `*`, `[]`, `<<`)
+- Matrix Addition and Subtraction
+- Matrix Multiplication
+- Matrix Transpose
+- Friend Function
+- Const Member Functions
+- Unit Testing using `assert()`
+
+## Program Description
+This program defines a `Matrix` class to perform operations on 2×2 matrices. It overloads operators to simplify matrix addition, subtraction, multiplication, element access, and output display. A transpose function is also implemented to interchange matrix rows and columns.
+
+The program uses assertions to verify the correctness of matrix calculations.
+
+## Operations Performed
+1. Matrix Addition
+2. Matrix Subtraction
+3. Matrix Multiplication
+4. Matrix Transpose
+5. Matrix Element Access
+
+## Technologies Used
+- **Programming Language:** C++
+- **Compiler:** OnlineGDB C++ Compiler
+- **Version Control:** GitHub
+
+## How to Run
+1. Open the `matrix_operations.cpp` file.
+2. Copy the source code into the OnlineGDB C++ compiler.
+3. Click **Run** to execute the program.
+4. Check the output for the matrix operations and unit test confirmation.
+
+## Expected Result
+The program displays the original matrices, their sum, difference, product, and the transpose of Matrix A. If all assertions pass, the program displays a success message.
+
+## Conclusion
+Successfully implemented matrix operations in C++ using operator overloading, member functions, and unit testing.
