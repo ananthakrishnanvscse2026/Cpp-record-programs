@@ -275,11 +275,5 @@ Withdrew Rs. 1500.000000
 ### File
 `bank_exception.cpp`
 
-### How to Compile and Run
-```bash
-g++ bank_exception.cpp -o bank_exception
-./bank_exception
-```
-
 ### Commit Message
 `Add transaction history and minimum balance validation`
