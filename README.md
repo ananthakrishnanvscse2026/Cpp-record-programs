@@ -346,3 +346,42 @@ Total Events Triggered: 2
 
 ### Learning Outcome
 This program demonstrates how C++ design patterns can be combined to create a modular notification system with reusable components, automatic memory management, notification priorities, and event tracking.
+
+# 10.Producer-Consumer System Using Multithreading
+
+### Description
+A C++ program demonstrating the Producer-Consumer problem using multithreading, a shared queue, mutexes, condition variables, and atomic variables. The producer generates 10 items, and the consumer processes them safely.
+
+### Concepts Used
+- **Multithreading:** Runs producer and consumer functions in separate threads.
+- **Mutex:** Protects the shared queue from concurrent access.
+- **Condition Variable:** Allows the consumer to wait until items are available.
+- **Atomic Variables:** Tracks produced items, consumed items, and producer completion safely.
+- **Queue:** Stores items between production and consumption.
+- **Buffer Monitoring:** Tracks the maximum and average buffer size when items are produced.
+- **Thread Joining:** Ensures both threads finish before the final statistics are displayed.
+
+### Sample Output
+```text
+Producer-Consumer System Started
+
+Produced: 1
+Consumed: 1
+Produced: 2
+Consumed: 2
+...
+Produced: 10
+Consumed: 10
+
+Total Items Produced: 10
+Total Items Consumed: 10
+Maximum Buffer Size: 1
+Average Buffer Size: 1
+Producer-Consumer System Completed
+```
+
+*Note: The sample buffer statistics and message order are illustrative. Actual values may vary depending on thread scheduling.*
+
+
+### Learning Outcome
+This program demonstrates safe communication between concurrent threads, synchronization of shared resources, and monitoring queue usage in a Producer-Consumer system.
